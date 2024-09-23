@@ -1,14 +1,14 @@
-class Student():
+class Fruit():
     #properties/attributes
-    def __init__ (self, name, year, roll_number ):
-        self.name = name
-        self.year = year
-        self.roll_number = roll_number
+    def __init__ (self, colour, shape, taste):
+        self.colour = colour
+        self.shape = shape
+        self.taste = taste
     #fuctions/methods
     def displayDeatails(self):
-        print("Hello I am {} in year {} with roll number {}".format(self.name, self.year, self.roll_number))
+        print("Hello I am a fruit with {} colour {} shape with {} taste".format(self.colour, self.shape, self.taste))
 
 
 #objects
-Student1 = Student("Adhayan", "9", "2")
-Student1.displayDeatails()
+apple = Fruit("red", "round", "sweet")
+apple.displayDeatails()
